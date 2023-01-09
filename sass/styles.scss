@@ -1,7 +1,7 @@
 @import "./variables.scss";
 @import "./general.scss";
 @import "./animations.scss";
-
+@import "./mixins.scss";
 // Neema Pharmacy ///////////////////////////////////
 
 .header {
@@ -19,10 +19,24 @@
   font-weight: 800;
   letter-spacing: 0.6px;
   font-size: 2rem;
+
+  @include for-tablet-portrait-up {
+    font-size: 3rem;
+  }
+
+  @include for-laptop-up {
+    font-size: 4.8rem;
+  }
 }
 
 .nav-list {
   display: none;
+  @include for-laptop-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+  }
 }
 
 .hamburger-menu {
@@ -31,11 +45,17 @@
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  @include for-tablet-portrait-up {
+    right: 3.2rem;
+  }
+  @include for-laptop-up {
+    display: none;
+  }
 
   span {
     height: 3px;
     width: 30px;
-    background-color: white;
+    background-color: $neema-white;
     display: block;
     margin: 6px 0;
     border-radius: 24px;
@@ -72,6 +92,10 @@
   padding: 2.4rem 4.8rem;
   transition: all 0.5s ease-in-out;
 
+  @include for-laptop-up {
+    display: none;
+  }
+
   .mobile-nav-item {
     font-size: 1.2rem;
     margin-bottom: 2rem;
@@ -94,7 +118,14 @@
   // text-align: center;
   line-height: 1.5;
   margin-bottom: 2rem;
-
+  @include for-tablet-portrait-up {
+    font-size: 2.8rem;
+    margin-bottom: 3.2rem;
+  }
+  @include for-laptop-up {
+    font-size: 4.8rem;
+    margin-bottom: 4rem;
+  }
   span {
     color: $neema-skinema-color;
   }
@@ -103,6 +134,10 @@
 .btn-container {
   display: flex;
   gap: 1.6rem;
+
+  @include for-laptop-up {
+    gap: 3.2rem;
+  }
 
   .btn {
     border: none;
@@ -117,9 +152,22 @@
     border-radius: 30px;
     color: $neema-main-color;
     font-weight: 400;
+    @include for-tablet-portrait-up {
+      height: 40px;
+      width: 120px;
+    }
+
+    @include for-laptop-up {
+      height: 60px;
+      width: 140px;
+      border-radius: 50px;
+    }
     .btn-link {
       color: $neema-main-color;
       font-size: 1.4rem;
+      @include for-tablet-portrait-up {
+        font-size: 1.6rem;
+      }
     }
   }
 
@@ -130,8 +178,21 @@
     border-radius: 24px;
     color: $neema-white;
     font-weight: 400;
+    @include for-tablet-portrait-up {
+      height: 41px;
+      width: 121px;
+    }
+
+    @include for-laptop-up {
+      height: 61px;
+      width: 141px;
+      border-radius: 50px;
+    }
     .btn-link {
       font-size: 1.4rem;
+      @include for-tablet-portrait-up {
+        font-size: 1.6rem;
+      }
     }
   }
 }
@@ -141,6 +202,12 @@
 .sec-heading {
   font-size: 2.4rem;
   margin-bottom: 3.2rem;
+  @include for-tablet-portrait-up {
+    font-size: 2.8rem;
+  }
+  @include for-laptop-up {
+    font-size: 4rem;
+  }
 }
 
 .profile-container {
@@ -152,11 +219,33 @@
   border-radius: 100px;
   border: 1px solid $neema-skinema-color;
   margin: 0 auto 3.2rem auto;
+
+  @include for-tablet-portrait-up {
+    width: 200px;
+    height: 200px;
+  }
+
+  @include for-laptop-up {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin-bottom: 6.4rem;
+  }
 }
 
 .sec-paragraph {
   font-size: 1.2rem;
   line-height: 1.5;
+
+  @include for-tablet-portrait-up {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  @include for-laptop-up {
+    font-size: 2rem;
+    line-height: 1.75;
+  }
 }
 
 // Skinema Section
@@ -176,9 +265,13 @@
   color: $neema-white;
 
   .footer-heading {
-    font-size: 2.4rem;
+    @extend .logo;
     text-align: center;
     margin-bottom: 4rem;
+
+    @include for-laptop-up {
+      margin-bottom: 6.4rem;
+    }
   }
 
   .address-container {
@@ -186,8 +279,21 @@
     justify-content: space-between;
     margin-bottom: 2.4rem;
 
+    @include for-tablet-portrait-up {
+      margin-bottom: 4rem;
+    }
+    @include for-laptop-up {
+      margin-bottom: 6.4rem;
+    }
+
     .address-list {
       font-size: 1rem;
+      @include for-tablet-portrait-up {
+        font-size: 1.4rem;
+      }
+      @include for-laptop-up {
+        font-size: 2rem;
+      }
     }
 
     .contact-list {
@@ -198,8 +304,18 @@
     text-align: center;
     font-size: 0.8rem;
 
+    @include for-tablet-portrait-up {
+      font-size: 1.2rem;
+    }
+
+    @include for-laptop-up {
+      font-size: 1.4rem;
+    }
+
     a {
       text-decoration: underline;
     }
   }
 }
+
+///////SKINEMA PAGE ////////////////////////

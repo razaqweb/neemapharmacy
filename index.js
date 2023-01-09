@@ -6,6 +6,7 @@ const hamMiddle = document.querySelector(".middle");
 const hamBottom = document.querySelector(".bottom");
 const mobileNav = document.querySelector(".mobile-nav-list");
 const learnBtn = document.querySelector(".learn-more");
+const normalNav = document.querySelector(".nav-list");
 
 // Event Listeners
 
@@ -43,6 +44,17 @@ learnBtn.addEventListener("click", (e) => {
   const id = e.target.getAttribute("href");
 
   if (!e.target.classList.contains("btn-link")) {
+    return;
+  }
+
+  document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+});
+
+normalNav.addEventListener("click", (e) => {
+  e.preventDefault();
+  const id = e.target.getAttribute("href");
+
+  if (!e.target.classList.contains("nav-link")) {
     return;
   }
 
