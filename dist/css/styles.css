@@ -247,22 +247,30 @@ ul {
 .btn-container .btn {
   border: none;
   background: none;
+  cursor: pointer;
 }
 .btn-container .learn-more {
   border: 1px solid #0a2647;
-  height: 30px;
+  height: 35px;
   width: 100px;
   border-radius: 30px;
   color: #0a2647;
   font-weight: 400;
 }
+.btn-container .learn-more .btn-link {
+  color: #0a2647;
+  font-size: 1.4rem;
+}
 .btn-container .skinema {
   background-color: #fd841f;
-  height: 31px;
+  height: 36px;
   width: 101px;
   border-radius: 24px;
   color: #efefef;
   font-weight: 400;
+}
+.btn-container .skinema .btn-link {
+  font-size: 1.4rem;
 }
 
 .sec-heading {
