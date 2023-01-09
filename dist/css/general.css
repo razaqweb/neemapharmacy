@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  color: #0a2647;
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.header {
+  padding: 3.2rem 2.4rem 3.2rem 2.4rem;
+}
+
+section,
+footer {
+  padding: 4.8rem 2.4rem 4.8rem 2.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: #efefef;
+}
+
+ul {
+  list-style: none;
+}/*# sourceMappingURL=general.css.map */

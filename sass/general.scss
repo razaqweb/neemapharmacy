@@ -1,0 +1,38 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  color: $neema-main-color;
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-family: $poppins;
+  overflow: hidden;
+}
+
+.header {
+  padding: 3.2rem 2.4rem 3.2rem 2.4rem;
+}
+
+section,
+footer {
+  padding: 4.8rem 2.4rem 4.8rem 2.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: $neema-white;
+}
+
+ul {
+  list-style: none;
+}

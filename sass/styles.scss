@@ -1,0 +1,197 @@
+@import "./variables.scss";
+@import "./general.scss";
+@import "./animations.scss";
+
+// Neema Pharmacy ///////////////////////////////////
+
+.header {
+  background-color: $neema-main-color;
+  color: $neema-white;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  font-size: 2rem;
+}
+
+.nav-list {
+  display: none;
+}
+
+.hamburger-menu {
+  position: absolute;
+  right: 2.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  span {
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    display: block;
+    margin: 6px 0;
+    border-radius: 24px;
+  }
+
+  .top.clicked {
+    animation: 1s forwards hamtop;
+  }
+  .middle.clicked {
+    animation: 0.5s forwards hammiddle;
+  }
+  .bottom.clicked {
+    animation: 1s forwards hambottom;
+  }
+
+  .top.unclicked {
+    animation: 1s forwards top-reverse;
+  }
+
+  .middle.unclicked {
+    animation: 0.5s forwards mid-reverse;
+  }
+
+  .bottom.unclicked {
+    animation: 1s forwards bot-reverse;
+  }
+}
+
+.mobile-nav-list {
+  position: absolute;
+  background-color: $neema-main-color;
+  right: 0;
+  top: 100%;
+  padding: 2.4rem 4.8rem;
+  transition: all 0.5s ease-in-out;
+
+  .mobile-nav-item {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.mobile-nav-list.inactive {
+  right: -50%;
+}
+
+// Hero Section
+
+.hero-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.prim-heading {
+  font-size: 2.4rem;
+  // text-align: center;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+
+  span {
+    color: $neema-skinema-color;
+  }
+}
+
+.btn-container {
+  display: flex;
+  gap: 1.6rem;
+
+  .btn {
+    border: none;
+    background: none;
+  }
+
+  .learn-more {
+    border: 1px solid $neema-main-color;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    color: $neema-main-color;
+    font-weight: 400;
+  }
+
+  .skinema {
+    background-color: $neema-skinema-color;
+    height: 31px;
+    width: 101px;
+    border-radius: 24px;
+    color: $neema-white;
+    font-weight: 400;
+  }
+}
+
+// About Section
+
+.sec-heading {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.profile-container {
+  width: 150px;
+  height: 150px;
+  background-image: url(../../imgs/img1.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 100px;
+  border: 1px solid $neema-skinema-color;
+  margin: 0 auto 3.2rem auto;
+}
+
+.sec-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+// Skinema Section
+
+#skinema {
+  background-color: $neema-blue;
+  color: $neema-white;
+
+  .skinema-link {
+    color: $neema-skinema-color;
+  }
+}
+
+// Footer Section
+#contact {
+  background-color: $neema-main-color;
+  color: $neema-white;
+
+  .footer-heading {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .address-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.4rem;
+
+    .address-list {
+      font-size: 1rem;
+    }
+
+    .contact-list {
+      @extend .address-list;
+    }
+  }
+  .copyright-text {
+    text-align: center;
+    font-size: 0.8rem;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

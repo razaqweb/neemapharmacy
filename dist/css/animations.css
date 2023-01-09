@@ -1,0 +1,112 @@
+@-webkit-keyframes hamtop {
+  from {
+    transform: translateY(0) rotate(0);
+    transform-origin: left;
+  }
+  to {
+    transform: translateY(9px) rotate(45deg);
+  }
+}
+@keyframes hamtop {
+  from {
+    transform: translateY(0) rotate(0);
+    transform-origin: left;
+  }
+  to {
+    transform: translateY(9px) rotate(45deg);
+  }
+}
+@-webkit-keyframes hammiddle {
+  from {
+    display: block;
+    opacity: 100%;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+@keyframes hammiddle {
+  from {
+    display: block;
+    opacity: 100%;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes hambottom {
+  from {
+    transform: translateY(0) rotate(0);
+    transform-origin: left;
+  }
+  to {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
+@keyframes hambottom {
+  from {
+    transform: translateY(0) rotate(0);
+    transform-origin: left;
+  }
+  to {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
+@-webkit-keyframes top-reverse {
+  from {
+    transform: translateY(9px) rotate(45deg);
+  }
+  to {
+    transform: translateY(0) rotate(0);
+    transform-origin: left;
+  }
+}
+@keyframes top-reverse {
+  from {
+    transform: translateY(9px) rotate(45deg);
+  }
+  to {
+    transform: translateY(0) rotate(0);
+    transform-origin: left;
+  }
+}
+@-webkit-keyframes mid-reverse {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 100%;
+  }
+}
+@keyframes mid-reverse {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes bot-reverse {
+  from {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  to {
+    transform: translateY(0) rotate(0);
+    transform-origin: left;
+  }
+}
+@keyframes bot-reverse {
+  from {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  to {
+    transform: translateY(0) rotate(0);
+    transform-origin: left;
+  }
+}/*# sourceMappingURL=animations.css.map */
