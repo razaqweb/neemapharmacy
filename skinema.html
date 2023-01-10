@@ -11,62 +11,88 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script defer src="skinema.js"></script>
     <title>Skinema</title>
   </head>
-  <body>
-    <header class="skinema-header">
-      <span class="sk-logo">SKINEMA</span>
-      <ul class="sk-nav-list">
-        <a href="./index.html" class="sk-nav-link"
-          ><li class="sk-nav-item">Neema Pharmacy</li></a
-        >
-        <a href="#" class="sk-nav-link"
-          ><li class="sk-nav-item">Products</li></a
-        >
-        <a href="#" class="sk-nav-link"><li class="sk-nav-item">The Lab</li></a>
-        <a href="#" class="sk-nav-link"><li class="sk-nav-item">Contact</li></a>
-      </ul>
-      <div class="sk-hamburger-menu"></div>
-    </header>
-    <!-- Hero Section -->
-    <section class="sk-hero" id="sk-hero">
-      <div class="hero-container">
-        <h1 class="sk-prim-heading">Natural and locally sourced cosmetics.</h1>
-        <p class="sk-prim-paragraph">
-          No artificial ingredients. Manufactured at Neema Pharmacy Labs,
-          Zanzibar.
-        </p>
-        <a href="#" class="sk-prim-link">Browse Products</a>
-        <a href="#" class="sk-prim-link">Make an Order</a>
-      </div>
-    </section>
+  <body class="sk-body">
+    <div class="sk-hero">
+      <header class="skinema-header">
+        <div class="background">
+          <span class="sk-logo">SKINEMA</span>
+          <ul class="sk-nav-list">
+            <li class="sk-nav-item">
+              <a href="#" class="sk-nav-link">Neema Pharmacy</a>
+            </li>
+            <li class="sk-nav-item">
+              <a href="#" class="sk-nav-link">Neema Pharmacy</a>
+            </li>
+            <li class="sk-nav-item">
+              <a href="#" class="sk-nav-link">Neema Pharmacy</a>
+            </li>
+            <li class="sk-nav-item">
+              <a href="#" class="sk-nav-link">Neema Pharmacy</a>
+            </li>
+          </ul>
+          <div class="sk-hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </header>
+      <!-- Hero Section -->
+      <section class="sk-hero2" id="sk-hero">
+        <div class="hero-container">
+          <h1 class="sk-prim-heading">
+            Natural and locally sourced cosmetics.
+          </h1>
+          <p class="sk-prim-paragraph">
+            No artificial ingredients. Manufactured at Neema Pharmacy Labs,
+            Zanzibar.
+          </p>
+          <div class="link-container">
+            <a href="#" class="sk-prim-link">Browse Products</a>
+            <a href="#" class="sk-prim-link order-link">Make an Order</a>
+          </div>
+        </div>
+      </section>
+    </div>
     <!-- Products Section -->
     <section class="sk-products" id="sk-products">
       <h1 class="sk-sec-heading">Products</h1>
+
       <div class="sk-product-grid">
         <!-- Grid Item -->
-        <div class="grid-img-container"></div>
+        <div class="grid-img-container">
+          <img src="./imgs/img5.JPG" alt="" />
+        </div>
         <div class="grid-text-container">
           <p class="grid-text">SKINEMA SOAP - SEAWEED</p>
           <p class="grid-text">MADE WITH SEAWEED EXTRACT AND LAVENDER OIL</p>
           <a href="#" class="grid-link">ORDER NOW</a>
         </div>
         <!-- Grid Item 2 -->
-        <div class="grid-img-container"></div>
+        <div class="grid-img-container">
+          <img src="./imgs/img7.JPG" alt="" />
+        </div>
         <div class="grid-text-container">
           <p class="grid-text">SKINEMA SOAP - TAMARIND</p>
           <p class="grid-text">MADE WITH TAMARIND EXTRACT AND EUCALYPTUS OIL</p>
           <a href="#" class="grid-link">ORDER NOW</a>
         </div>
         <!-- Grid Item 3 -->
-        <div class="grid-img-container"></div>
+        <div class="grid-img-container">
+          <img src="./imgs/img8.JPG" alt="" />
+        </div>
         <div class="grid-text-container">
           <p class="grid-text">SKINEMA SOAP - COCONUT</p>
           <p class="grid-text">TRADITIONAL ANTI-ACNE COCONUT SOAP</p>
           <a href="#" class="grid-link">ORDER NOW</a>
         </div>
         <!-- Grid Item 4 -->
-        <div class="grid-img-container"></div>
+        <div class="grid-img-container">
+          <img src="./imgs/sk-img4.JPG" alt="" />
+        </div>
         <div class="grid-text-container">
           <p class="grid-text">SKINEMA CREAM - MASSAGE CREAM</p>
           <p class="grid-text">MADE WITH MENTHOL AND COCONUT OIL</p>
@@ -78,7 +104,9 @@
     <!-- The Lab Section -->
     <section class="sk-lab" id="sk-lab">
       <h1 class="sk-sec-heading">Our Lab</h1>
-      <div class="carousel-container"></div>
+      <div class="lab-carousel-img">
+        <img class="carousel-img" src="imgs/lab-img1.JPG" alt="" />
+      </div>
       <p class="sk-sec-paragraph">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed nibh
         at orci dapibus tincidunt sed vel erat. Proin mauris est, dictum eget

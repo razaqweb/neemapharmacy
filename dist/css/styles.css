@@ -9,7 +9,7 @@ html {
   overflow-x: hidden;
 }
 
-body {
+body, .sk-body {
   color: #0a2647;
   font-weight: 400;
   font-size: 1.8rem;
@@ -55,6 +55,24 @@ a {
 
 ul {
   list-style: none;
+}
+
+.skinema-header {
+  padding: 3.2rem 2.4rem 3.2rem 2.4rem;
+}
+@media (min-width: 600px) {
+  .skinema-header {
+    padding: 4rem 3.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .skinema-header {
+    padding: 6.4rem;
+  }
+}
+
+.sk-body {
+  font-family: "Inter", sans-serif;
 }
 
 @-webkit-keyframes hamtop {
@@ -197,11 +215,11 @@ ul {
   }
 }
 
-.nav-list {
+.nav-list, .sk-nav-list {
   display: none;
 }
 @media (min-width: 1200px) {
-  .nav-list {
+  .nav-list, .sk-nav-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -209,7 +227,7 @@ ul {
   }
 }
 
-.hamburger-menu {
+.hamburger-menu, .sk-hamburger-menu {
   position: absolute;
   right: 2.4rem;
   top: 50%;
@@ -217,16 +235,16 @@ ul {
   cursor: pointer;
 }
 @media (min-width: 600px) {
-  .hamburger-menu {
+  .hamburger-menu, .sk-hamburger-menu {
     right: 3.2rem;
   }
 }
 @media (min-width: 1200px) {
-  .hamburger-menu {
+  .hamburger-menu, .sk-hamburger-menu {
     display: none;
   }
 }
-.hamburger-menu span {
+.hamburger-menu span, .sk-hamburger-menu span {
   height: 3px;
   width: 30px;
   background-color: #efefef;
@@ -234,27 +252,27 @@ ul {
   margin: 6px 0;
   border-radius: 24px;
 }
-.hamburger-menu .top.clicked {
+.hamburger-menu .top.clicked, .sk-hamburger-menu .top.clicked {
   -webkit-animation: 1s forwards hamtop;
           animation: 1s forwards hamtop;
 }
-.hamburger-menu .middle.clicked {
+.hamburger-menu .middle.clicked, .sk-hamburger-menu .middle.clicked {
   -webkit-animation: 0.5s forwards hammiddle;
           animation: 0.5s forwards hammiddle;
 }
-.hamburger-menu .bottom.clicked {
+.hamburger-menu .bottom.clicked, .sk-hamburger-menu .bottom.clicked {
   -webkit-animation: 1s forwards hambottom;
           animation: 1s forwards hambottom;
 }
-.hamburger-menu .top.unclicked {
+.hamburger-menu .top.unclicked, .sk-hamburger-menu .top.unclicked {
   -webkit-animation: 1s forwards top-reverse;
           animation: 1s forwards top-reverse;
 }
-.hamburger-menu .middle.unclicked {
+.hamburger-menu .middle.unclicked, .sk-hamburger-menu .middle.unclicked {
   -webkit-animation: 0.5s forwards mid-reverse;
           animation: 0.5s forwards mid-reverse;
 }
-.hamburger-menu .bottom.unclicked {
+.hamburger-menu .bottom.unclicked, .sk-hamburger-menu .bottom.unclicked {
   -webkit-animation: 1s forwards bot-reverse;
           animation: 1s forwards bot-reverse;
 }
@@ -286,24 +304,24 @@ ul {
   flex-direction: column;
 }
 
-.prim-heading {
+.prim-heading, .hero-container .sk-prim-heading {
   font-size: 2.4rem;
   line-height: 1.5;
   margin-bottom: 2rem;
 }
 @media (min-width: 600px) {
-  .prim-heading {
+  .prim-heading, .hero-container .sk-prim-heading {
     font-size: 2.8rem;
     margin-bottom: 3.2rem;
   }
 }
 @media (min-width: 1200px) {
-  .prim-heading {
+  .prim-heading, .hero-container .sk-prim-heading {
     font-size: 4.8rem;
     margin-bottom: 4rem;
   }
 }
-.prim-heading span {
+.prim-heading span, .hero-container .sk-prim-heading span {
   color: #fd841f;
 }
 
@@ -381,17 +399,17 @@ ul {
   }
 }
 
-.sec-heading {
+.sec-heading, .sk-sec-heading {
   font-size: 2.4rem;
   margin-bottom: 3.2rem;
 }
 @media (min-width: 600px) {
-  .sec-heading {
+  .sec-heading, .sk-sec-heading {
     font-size: 2.8rem;
   }
 }
 @media (min-width: 1200px) {
-  .sec-heading {
+  .sec-heading, .sk-sec-heading {
     font-size: 4rem;
   }
 }
@@ -421,18 +439,18 @@ ul {
   }
 }
 
-.sec-paragraph {
+.sec-paragraph, .sk-sec-paragraph {
   font-size: 1.2rem;
   line-height: 1.5;
 }
 @media (min-width: 600px) {
-  .sec-paragraph {
+  .sec-paragraph, .sk-sec-paragraph {
     font-size: 1.4rem;
     line-height: 1.5;
   }
 }
 @media (min-width: 1200px) {
-  .sec-paragraph {
+  .sec-paragraph, .sk-sec-paragraph {
     font-size: 2rem;
     line-height: 1.75;
   }
@@ -503,4 +521,132 @@ ul {
 }
 #contact .copyright-text a {
   text-decoration: underline;
+}
+
+.skinema-header {
+  background-color: none;
+  position: relative;
+}
+
+.sk-hero {
+  background-image: url("../../imgs/Group 2.png");
+  background-size: cover;
+  color: #efefef;
+}
+
+.sk-logo {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.hero-container {
+  width: 75%;
+}
+.hero-container .sk-prim-heading {
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.hero-container .sk-prim-paragraph {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.hero-container .sk-prim-link {
+  font-size: 1rem;
+  letter-spacing: 0.6px;
+  position: relative;
+}
+.hero-container .link-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.sk-prim-link::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #f6b986;
+  border-radius: 100px;
+  right: 0;
+  top: 120%;
+}
+
+.sk-prim-link.order-link::after {
+  background-color: #fd841f;
+}
+
+.sk-products,
+.sk-lab {
+  background-color: #160b01;
+  color: #efefef;
+}
+
+.sk-product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 2rem;
+}
+
+.grid-img-container {
+  width: 200px;
+  height: 180px;
+  background-color: blue;
+}
+.grid-img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-text, .grid-link {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.grid-link {
+  position: relative;
+}
+
+.grid-link::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #fd841f;
+  top: 120%;
+  right: 0;
+}
+
+.lab-carousel-img {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.lab-carousel-img img {
+  width: 100%;
+}
+
+.sk-contact {
+  background-color: #fbe3cf;
+  color: #160b01;
+}
+
+.sk-contact-list {
+  margin-bottom: 3.2rem;
+}
+
+.sk-contact-item {
+  font-size: 1.2rem;
+}
+
+.sk-copyright-text {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.sk-copyright-text a {
+  color: #fd841f;
 }/*# sourceMappingURL=styles.css.map */

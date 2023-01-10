@@ -49,3 +49,18 @@ a {
 ul {
   list-style: none;
 }
+
+.skinema-header {
+  padding: 3.2rem 2.4rem 3.2rem 2.4rem;
+  @include for-tablet-portrait-up {
+    padding: 4rem 3.2rem;
+  }
+  @include for-laptop-up {
+    padding: 6.4rem;
+  }
+}
+
+.sk-body {
+  @extend body;
+  font-family: $inter;
+}
