@@ -323,6 +323,8 @@
 .skinema-header {
   background-color: none;
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sk-hamburger-menu {
@@ -415,6 +417,7 @@
 .grid-img-container {
   width: 150px;
   height: 140px;
+  border: 1px solid $neema-skinema-color;
 
   img {
     width: 100%;
@@ -453,14 +456,25 @@
   @extend .sec-paragraph;
 }
 
-.lab-carousel-img {
-  height: 300px;
-  width: 300px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  img {
-    width: 100%;
+// .lab-carousel-img {
+//   height: 300px;
+//   width: 300px;
+//   text-align: center;
+//   cursor: pointer;
+//   transition: all 0.5s ease-in-out;
+//   img {
+//     width: 100%;
+//   }
+// }
+
+.lab-grid-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  margin-bottom: 3.2rem;
+  .lab-img {
+    width: 130px;
+    height: 110px;
   }
 }
 

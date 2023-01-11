@@ -542,6 +542,8 @@ ul {
 .skinema-header {
   background-color: none;
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sk-hero {
@@ -617,6 +619,7 @@ ul {
 .grid-img-container {
   width: 150px;
   height: 140px;
+  border: 1px solid #fd841f;
 }
 .grid-img-container img {
   width: 100%;
@@ -647,15 +650,15 @@ ul {
   right: 0;
 }
 
-.lab-carousel-img {
-  height: 300px;
-  width: 300px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
+.lab-grid-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  margin-bottom: 3.2rem;
 }
-.lab-carousel-img img {
-  width: 100%;
+.lab-grid-img-container .lab-img {
+  width: 130px;
+  height: 110px;
 }
 
 .sk-contact {
