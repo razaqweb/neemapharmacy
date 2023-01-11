@@ -109,4 +109,20 @@
     transform: translateY(0) rotate(0);
     transform-origin: left;
   }
+}
+@-webkit-keyframes slideshow {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes slideshow {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=animations.css.map */
