@@ -547,6 +547,7 @@ ul {
 }
 
 .sk-hero {
+  background-color: #010;
   background-image: url("../../imgs/Group 2.png");
   background-size: cover;
   color: #efefef;
