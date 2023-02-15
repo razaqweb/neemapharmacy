@@ -31,8 +31,10 @@ skMobileNav.addEventListener("click", (e) => {
     return;
   } else if (!id.startsWith("#")) {
     window.open(homePage);
+  } else if (e.target.classList.contains("sk-nav-link") && id.startsWith("#")) {
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
-  document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+
   skMobileNav.classList.toggle("inactive");
   hamTop.classList.toggle("clicked");
   hamTop.classList.toggle("unclicked");
@@ -50,9 +52,9 @@ skNormalNav.addEventListener("click", (e) => {
     return;
   } else if (!id.startsWith("#")) {
     window.open(homePage);
+  } else if (e.target.classList.contains("sk-nav-link") && id.startsWith("#")) {
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
-
-  document.querySelector(id).scrollIntoView({ behavior: "smooth" });
 });
 
 productLink.addEventListener("click", (e) => {
