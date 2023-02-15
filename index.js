@@ -7,8 +7,11 @@ const hamBottom = document.querySelector(".bottom");
 const mobileNav = document.querySelector(".mobile-nav-list");
 const learnBtn = document.querySelector(".learn-more");
 const normalNav = document.querySelector(".nav-list");
-
+const fullYear = new Date().getFullYear();
+const copyrightDate = document.querySelector(".cp-date");
 // Event Listeners
+
+copyrightDate.textContent = fullYear;
 
 hamMenu.addEventListener("click", (e) => {
   e.preventDefault();
