@@ -3,6 +3,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/neemaph1/public_html
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp skinema.html $DEPLOYPATH
     - /bin/cp -R dist $DEPLOYPATH
     - /bin/cp index.js $DEPLOYPATH
     - /bin/cp skinema.js $DEPLOYPATH
