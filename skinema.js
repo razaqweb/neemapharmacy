@@ -7,7 +7,7 @@ const hamBottom = document.querySelector(".bottom");
 const skMobileNav = document.querySelector(".mobile-nav-list");
 const skNormalNav = document.querySelector(".sk-nav-list");
 const productLink = document.querySelector(".btn-link");
-
+const homePage = "https://neemapharmacy.co.tz";
 
 copyrightDate.textContent = fullYear;
 
@@ -24,11 +24,13 @@ skHamMenu.addEventListener("click", (e) => {
 
 skMobileNav.addEventListener("click", (e) => {
   e.preventDefault();
+
   const id = e.target.getAttribute("href");
+  console.log(id);
   if (!e.target.classList.contains("mobile-nav-link")) {
     return;
-  } else if (id == "index.html") {
-    window.open("index.html");
+  } else if (!id.startsWith("#")) {
+    window.open(homePage);
   }
   document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   skMobileNav.classList.toggle("inactive");
@@ -46,8 +48,8 @@ skNormalNav.addEventListener("click", (e) => {
 
   if (!e.target.classList.contains("sk-nav-link")) {
     return;
-  } else if (id == "index.html") {
-    window.open(id);
+  } else if (!id.startsWith("#")) {
+    window.open(homePage);
   }
 
   document.querySelector(id).scrollIntoView({ behavior: "smooth" });
